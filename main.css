@@ -48,28 +48,6 @@ body {
 	background-color: blue;
 }
 
-.box-twitter{
-	height: 150px;
-}
-
-.box-twitter:hover .twitter-left {
-	width: 0;
-	height: 150px;
-}
-
- .twitter-right {
-	width: 0;
-	height: 150px;
-	background-color: red;
-}
-
-.box-twitter:hover .twitter-right {
-	width: 100px;
-	height: 150px;
-/*	background-color: yellow; */
-	transition: width 1s;
-}
-
 .img-left {
 	width: 40px;
 	height: 40px;
@@ -111,25 +89,29 @@ p {
 	margin-left: 10px;
 }
 
-
-.twitter-information {
+.box-twitter:hover .twitter-left {
 	width: 0;
 	height: 150px;
-	background-color: white;
-	position: relative;
-	overflow: hidden;
-	transition-property: width;
-	transition-duration: 1s;
-	border-right: 2px solid white;
 }
 
-.box-twitter:hover .twitter-information {
+.twitter-right {
+	width: 0;
+	height: 150px;
+	background-color: red;
+}
+
+.box-twitter:hover .twitter-right {
+	width: 100px;
+	height: 150px;
+	transition: width 1s;
+}
+
+.box-twitter:hover .information {
 	width: 300px;
 	height: 150px;
 	transition-property: width;
 	transition-duration: 1s;
 }
-
 
 
 .box-facebook {
@@ -154,18 +136,7 @@ p {
 	transition: width 1s;
 }
 
-.facebook-information {
-	width: 0;
-	height: 150px;
-	background-color: white;
-	position: relative;
-	overflow: hidden;
-	transition-property: width;
-	transition-duration: 1s;
-	border-right: 2px solid white;
-}
-
-.box-facebook:hover .facebook-information {
+.box-facebook:hover .information {
 	width: 300px;
 	height: 150px;
 	transition-property: width;
